@@ -10,7 +10,7 @@ export class UsersController {
     getAll() {
         return this.usersService.find();
     }
-    @Get(':id') // http://localhost:3000/users/abcd
+    @Get(':id') 
     getById(@Param('id') id: string) {
         return this.usersService.findById(id);
      }
