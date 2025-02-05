@@ -9,7 +9,4 @@ export class CreateRecetteDto {
     @IsAlphanumeric()
     description: string;
 
-    @IsEmail()
-    email: string;
-   
 }
