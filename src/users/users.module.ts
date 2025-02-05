@@ -11,7 +11,7 @@ import * as bcrypt from 'bcrypt';
 	    name: 'User', 
 	    useFactory: () => {
           const schema = UserSchema;
-          schema.pre('save', async function (next: ) {
+          schema.pre('save', async function (next) {
             const user = this as any;
 
 					  if (!user.isModified('password')) {
