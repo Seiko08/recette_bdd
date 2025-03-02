@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsAlphanumeric, IsEmail} from "class-validator";
+import { IsNotEmpty, IsAlphanumeric} from "class-validator";
 
 export class CreateRecetteDto {
     @IsNotEmpty()
